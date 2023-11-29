@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+    <title>Movie Ticket</title>
+</head>
+
+<body>
+    <h1>Select the movie and time and tell us your age.</h1>
+    <form>
+        <h3>Movies</h3>
+        <input type="radio" id="marvels" value="marvels">
+        <label for="marvels">The Marvels</label>
+        <input type="radio" id="minions" value="minions">
+        <label for="minions">The Minions</label>
+        <input type="radio" id="notebook" value="notebook">
+        <label type="notebook">Notebook</label>
+
+        <h3>Time</h3>
+        <select name="time" id="time">
+            <option value="morning">9:00AM</option>
+            <option value="afternoon">4:30PM</option>
+            <option value="evening">8:00PM</option>
+        </select>
+
+        <h3>Your age</h3>
+        <input type="number" name="age" id="age" min="7">
+        <p>Discount:</p>
+        <ul>
+            <li>Age between 7 to 12: 20%</li>
+            <li>60 and above: 40%</li>
+        </ul>
+
+        <h3>Number of Tickets</h3>
+        <input type="number" id="ticket" name="ticket" min="1">
+        <br>
+        <button type="submit">Get ticket</button>
+    </form>
+    <div>
+        <ul id="finalInfo"></ul>
+        <p id="finalPrice"></p>
+    </div>
+</body>
+
+</html>
